@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>OpenStack, du sur mesure pour le Cloud Public</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/ovh.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown data-background="data/ovh-meet-up-brest-digit-event.jpg">
+                    # OpenStack
+                    ![OpenStack](data/openstack_logo.png)
+                </section>
+                <section data-markdown data-background="data/chien.gif" data-background-size="contain" data-background-color="white" data-separator-notes="^Note:">
+                    # kesako?
+
+                    Note:
+                    il etait une fois, en 2010
+                    nova, swift
+                    openstack c'est comme la suite microsoft office, c'est un ensemble de logiciel
+                    excel, word
+                    nova, neutron
+                    chez ovh, c'est le cloud public qui tourne dessus, PCI, PCS
+                    peut etre bientot dns, stockage, baremetal
+                </section>
+                <section data-markdown data-background="data/love-hate.gif" data-background-size="contain" data-background-color="white" data-separator-notes="^Note:">
+                    Note:
+                     - passion = je taime, moi non plus, parfois on adore, parfois on deteste
+                     - donc je vous propose de vous dire pourquoi jadore openstack et pk je le deteste en meme temps
+                </section>
+                <section data-markdown data-background="data/open-door.gif" data-background-size="contain" data-background-color="black" data-separator-notes="^Note:">
+                    # Ouvert
+
+                    Note:
+                     - c'est genial car on peut regarder sous le capot, rien n'est cache dans openstack
+                     - c'est chiant car des fois on voudrait coder comme des pieds mais on ne peut pas, il faut faire bien car les autres voient ce quon fait
+                     - c'est genial car du coup on peut modifier, proposer de nouvelles choses, faire des choses pour nous
+                </section>
+                <section data-markdown data-background="data/communaute.gif" data-background-color="white" data-separator-notes="^Note:">
+                    # Communaute
+
+                    Note:
+                     - c'est genial de voir tous ces gens, de participer a quelque chose de grand
+                     - plus de 90k membres!
+                     - OpenStack summit
+                     - c'est vraiment penible de devoir compter sur les autres, de devoir s'adapter au fonctionnement de la communaute
+                     - c'est chiant car si on veut pousser ce quon fait, il faut le faire en prenant en compte les autres
+                </section>
+                <section data-markdown data-background="data/bug.gif" data-background-size="contain" data-background-color="white" data-separator-notes="^Note:">
+                    Note:
+                     - c'est genial car on peut toujours faire progresser openstack, on est utile
+                     - c'est chiant car quand on tombe sur un bug, on a les bonbons qui font des bons
+                     - en meme temps c'est genial de debug, je crois que c'est ma passion de bidouiller et debug les trucs
+                </section>
+
+                <section data-markdown data-background="data/camion_plot.gif">
+                    ## Questions?
+                </section>
+
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
+                slideNumber: 'c/t',
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
+</html>
